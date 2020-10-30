@@ -1,5 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
+import ReactDom from 'react-dom';
+import store from './src/store';
+import { Provider } from 'react-redux';
+
 import {Button} from 'antd';
 import './App.css';
 
@@ -7,19 +10,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Joy's FDC
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-          <Button type="primary">START</Button>
-        </a>
+        <Button type="primary">START React</Button>
       </header>
     </div>
   );
