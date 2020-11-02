@@ -7,8 +7,7 @@ const incrementReducer = (state = initialState , action) => {
         case 'INCREMENT': {
             state.number += 1
             return { ...state }
-            break
-        };
+        }
         default: return state;
     }
 }
